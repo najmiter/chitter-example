@@ -47,7 +47,16 @@ export default function Home() {
         </ResizablePanel>
         <ResizableHandle withHandle />
         <ResizablePanel>
-          <Label className="text-lg mb-2 block">Output</Label>
+          <div className="flex justify-between items-center gap-2">
+            <Label className="text-lg mb-2 block">Output</Label>
+            <a
+              target="_blank"
+              href="https://github.com/najmiter/asm-chitter"
+              className="text-blue-500 text-sm underline-offset-2 hover:underline"
+            >
+              Github Repository
+            </a>
+          </div>
           <Chitter>
             <div
               className="w-full !h-[95%]"
